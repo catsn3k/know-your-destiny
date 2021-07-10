@@ -2,8 +2,7 @@
 
 ![alt text](https://cdn.glitch.com/01e8c0c1-ffaa-492d-b007-ff64a3ca386a%2Fkyd.PNG?1527668453194 "Niggers!")
 
-## Inspired by the original Know Your Destiny flash game
---------------------------
+### Inspired by the original Know Your Destiny flash game
 ----------------------------------------------------------------------
 
 ## Description: 
