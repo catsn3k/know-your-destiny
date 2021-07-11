@@ -1,4 +1,4 @@
-﻿// Defining constant variables
+// Defining constant variables
 const discord = require("discord.js");
 const bot = new discord.Client();
 const dotenv = require("dotenv").config();
@@ -567,18 +567,18 @@ var randText6 = [
   "4chan",
   "Africa",
   "Aids",
-  "Angels",
-  "Babies",
-  "Big Boss",
+  "The Angels",
+  "The Babies",
+  "The Big Boss",
   "Cakes",
   "Cancer",
-  "Children",
-  "Dead People",
+  "The Children",
+  "The Dead People",
   "Death",
   "Europe",
   "Everyone",
   "Fried Chicken",
-  "Furries",
+  "The Furries",
   "Germany",
   "God",
   "Goiters",
@@ -668,7 +668,7 @@ bot.on("message", msg => {
 
     // Replies to the user with their brand new destiny!
     msg.reply(
-      "\n***YOU ARE***\n" +
+        "\n***YOU ARE***\n" +
         "`" +
         rand1 +
         "`" +
@@ -678,13 +678,15 @@ bot.on("message", msg => {
         "`" +
         "\n***THE***\n" +
         "`" +
-        rand3 + "`" 
-      + " " +
+        rand3 + 
+        "`" +
+        " " +
         "`" + rand4 +
-        "`" + "\n***DESTINED TO***\n" +
+        "`" + 
+	      "\n***DESTINED TO***\n" +
         "`" + rand5 + 
-        "`" 
-      + " " + 
+        "`" +
+        " " + 
         "`" +
         rand6 +
         "`" 
@@ -692,7 +694,7 @@ bot.on("message", msg => {
   };
 
   // Command for displaying all combinations of destinies to choose from
-  /* pastebin.js is now depreceated, this is what is left
+  /* pastebin.js is now deprecated, this is what is left of the pastebin code
   if (command === "kydall") {
     
     let combo12 = [];
@@ -831,20 +833,46 @@ bot.on("message", msg => {
       randText4.length +
       randText5.length +
       randText6.length;
-    msg.reply(
-      "There is a total of " +
+    msg.author.send(
+	// Copy and pasted the destiny 
+	"\n***YOU ARE***\n" +
+        "`" +
+        randText1.length +
+        "`" +
+        " " +
+        "`" +
+        randText2.length +
+        "`" +
+        "\n***THE***\n" +
+        "`" +
+        randText3.length + 
+	      "`" +
+        " " +
+        "`" + 
+	      randText4.length +
+        "`" + 
+	      "\n***DESTINED TO***\n" +
+        "`" + 
+	      randText5.length + 
+        "`" +
+        " " + 
+        "`" +
+        randText6.length +
+        "`" +
+      	"\nA total of " +
         "`" +
         listValues +
         "`" +
-        " different options to choose from your ***DESTINY!***"
+        " different options to choose from for your own ***DESTINY!***"
     );
   };
 
   // Info on what commands the bot holds and also links the user to the source
   if (command === "kydinfo") {
     // Look away!  Incoming a disgusting string, I don't know how to make this more beautiful so I'm just going to leave this here
+    // \n.kydall => Lists all known combinations for a destiny and compiles it all into a pastebin
     msg.author.send(
-      "```-==================|List of Commands|===================-\n\n.kyd => Gives the user their destiny!\n.kydlist => Lists the amount of choices that are available for the user's destiny!\n.kydall => Lists all known combinations for a destiny and compiles it all into a pastebin (CURRENTLY NOT WORKING)\n\n-====================|Information|======================-\n\nTIP: You can send commands to the bot in Direct Messages without spamming a text channel!\n\n-catsn3k```"
+      "```-==================|List of Commands|===================-\n\n.kyd => Gives the user their destiny!\n.kydlist => Lists the amount of choices that are available for the user's destiny!\n\n-====================|Information|======================-\n\nTIP: You can send commands to the bot in Direct Messages without spamming a text channel!\n\n-catsn3k```"
     );
   }
 });
