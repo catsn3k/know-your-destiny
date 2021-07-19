@@ -6,7 +6,7 @@
 ----------------------------------------------------------------------
 
 ## Description: 
-### A Discord bot developed to have the base function from the Know Your Destiny flash (swf)
+### A Discord bot that functions like the popular Know Your Destiny flash (swf)
 
 ### This Discord bot uses a decompililation of destiny choices from the KnowYourUltimateDestiny.swf the fan-made version of the original know_your_destiny.swf but with more choices to the mix (and more to come?!?)
 ### The two flash games are in the assests folder if you are interested in trying the true version(s), otherwise, this Discord bot will continue to be updated
