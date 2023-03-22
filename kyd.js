@@ -466,7 +466,7 @@ var randText5 = [
   "Redefine",
   "Reeducate",
   "Reinvent",
-  "Rule ",
+  "Rule",
   "Sage",
   "See",
   "Sell",
